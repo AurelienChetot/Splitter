@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <h1>SPLI<br>TTER</h1>
+  <div class="splitter-container">
+    <div class="user-container">
+      <div>
+        <p>Bill</p>
+        <input class="bill-input" type="number" id="champ_nombre" name="champ_nombre">
+      </div>
+      <p>Select Tip %</p>
+      <div class="button-container">
+        <button class="style-number">5%</button>
+        <button class="style-number">10%</button>
+        <button class="style-number">15%</button>
+        <button class="style-number">25%</button>
+        <button class="style-number">50%</button>
+        <input class="style-value" type="value" id="value_custom" placeholder='Custom' name="value_custom">
+      </div>
+      <div>
+        <p>Number of People</p>
+        <input class="input-people" type="number" id="number_people" name="number_people">
+      </div>
+    </div>
+    <div class="result-container">
+
+      <div class="total-container">
+        <div class="amout-container">
+          <p>Tip Amout<br><span class="person">/ person</span></p>
+          <span class="style-result" id="tip_amount"><img src="/images/icon-dollar.svg">0.00</span>
+        </div>
+        <div class="amout-container">
+          <p>Total<br><span class="person">/ person</span></p>
+          <span class="style-result" id="total"><img src="/images/icon-dollar.svg">0.00</span>
+        </div>
+        <div class="reset-container">
+
+          <button class="button-reset" id="reset-button">RESET</button>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
